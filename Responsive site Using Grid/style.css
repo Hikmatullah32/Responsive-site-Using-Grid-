@@ -1,0 +1,571 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:wght@800&family=Poppins:wght@400;600;800&family=Roboto&family=Roboto+Condensed:wght@400;700&display=swap');
+
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+
+      font-family: 'Open Sans', sans-serif;
+  }
+
+  .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr 1fr 250px;
+      grid-template-areas:  'iphone iphone learn-more learn-more '
+                            'keyboard imac-retina imac-retina popular'
+                            'game laptop laptop popular'
+                            'twitter popular2 tv tv'
+      ;
+  }
+
+
+
+  /* 1st */
+  .iphone {
+      grid-area: iphone;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+  }
+
+  .iphone .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .content h3 {
+      color: #9fa3a7;
+      opacity: 70%;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+  }
+
+  .content h2 {
+      font-family: 'Arvo', sans-serif;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+  }
+
+  .content p {
+      color: #9fa3a7;
+
+  }
+
+
+
+  .learn-more {
+      grid-area: learn-more;
+      background-color: #f7f8f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+  }
+
+  .learn-more-content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      text-align: center;
+  }
+
+  .learn-more-content h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: #9fa3a7;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+  }
+
+  .learn-more-content h3 {
+      font-family: 'Arvo', sans-serif;
+      font-size: 48px;
+      font-weight: 400;
+      line-height: 60px;
+  }
+
+  
+  .keyboard {
+      grid-area: keyboard;
+      background-color: #f05638;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .keyboard img {
+      width: 319px;
+      height: 170px;
+  }
+
+  .keyboard .keyboard-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+  }
+
+  .keyboard-content strong {
+      font-family: 'Arvo', sans-serif;
+      font-size: 22px;
+      line-height: 32px;
+      color: #fff;
+      text-align: center;
+      font-weight: 800;
+  }
+
+  .keyboard-content a {
+      color: #ffc80a;
+      letter-spacing: 2.4px;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+  }
+
+
+
+  .imac-retina {
+      grid-area: imac-retina;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+  }
+
+  .imac-retina .left-side {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+  }
+
+  .left-side h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #9fa3a7;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+  }
+
+  .left-side h2 {
+      font-family: 'Arvo', sans-serif;
+      font-size: 22px;
+      width: 45%;
+      font-weight: 400;
+      margin-left: 26%;
+  }
+
+  .left-side .content {
+      margin-top: 40px;
+      text-align: center;
+  }
+
+  .left-side img {
+      height: 200px;
+      width: 200px;
+  }
+
+
+  .right-side {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 40%;
+  }
+
+  .right-side p {
+      font-size: 20px;
+      color: #9fa3a7;
+      line-height: 26px;
+
+  }
+
+  .right-side a {
+      font-size: 12px;
+      letter-spacing: 2.4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #27b9c2;
+  }
+
+
+  .popular {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      grid-area: popular;
+      background-color: #8f76bc;
+  }
+
+
+  .popular .circle {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      display: flex;
+      width: 373px;
+      height: 373px;
+      border-radius: 50%;
+      background-color: #8166b0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .circle img {
+      width: 250px;
+  }
+
+  .circle .icon {
+      background-image: url(images/icon.png);
+      background-repeat: no-repeat;
+      padding: 2px 13px 1px 30px;
+      background-color: hsla(0, 0%, 100%, .08);
+      background-position: 3px 50%;
+      font-size: 10px;
+      line-height: 23px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      background-size: 12px;
+      border-radius: 60px;
+      color: #fff;
+  }
+
+  .circle h3 {
+      font-family: 'Montserrat', sans-serif;
+      /* color: #9fa3a7; */
+      color: #fff;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+  }
+
+  .popular-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+  }
+
+  .popular-content h2 {
+      color: #fff;
+      font-family: 'Arvo', sans-serif;
+      font-size: 32px;
+      line-height: 36px;
+  }
+
+  .popular-content p {
+      color: #fff;
+  }
+
+  .popular a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      padding: 14px 28px;
+      border-radius: 50px;
+      background-color: #ffc80a;
+      color: #000;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+      text-decoration: none;
+  }
+
+  
+  .game {
+      grid-area: game;
+      background-color: #f7f8f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+  }
+
+  .game img {
+      height: 150px;
+      width: 170px;
+  }
+
+  .game .game-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 50%;
+  }
+
+  .game h3 {
+      font-family: 'Arvo', sans-serif;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+  }
+
+  .game a {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #27b9c2;
+      ;
+
+  }
+
+  
+  .laptop {
+      grid-area: laptop;
+      background-color: #93b6b7;
+  }
+
+  .laptop h1 {
+      padding: 4px 9px;
+      border-radius: 5px;
+      background-color: #fa684f;
+      font-size: 8px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      width: 15%;
+      color: #fff;
+  }
+
+  .laptop img {
+      height: 260px;
+      width: 500px;
+
+  }
+
+  .laptop strong {
+      color: #fff;
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+  }
+
+  .Much {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+  }
+
+
+  .twitter {
+      grid-area: twitter;
+      background-color: #38d5f4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+  }
+
+  .twitter .twitter-circle {
+      display: flex;
+      flex-direction: column;
+      width: 240px;
+      height: 240px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #35cfed;
+      text-align: center;
+      gap: 10px;
+  }
+
+
+  .popular2 {
+      grid-area: popular2;
+      background-color: #f7f8f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .popular2 h2 {
+      background-color: #7bc424;
+      color: #fff;
+      font-size: 8px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      border-radius: 8px;
+  }
+
+  .popular2 h3 {
+      font-family: 'Arvo', sans-serif;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+      text-align: center;
+  }
+
+  
+
+  .tv {
+      grid-area: tv;
+      background-color: #2c2c2c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 50px;
+  }
+
+  .tv img {
+
+      width: 206px;
+      height: 222px;
+  }
+
+  .tv h3 {
+      font-family: 'Arvo', sans-serif;
+      font-size: 22px;
+      line-height: 32px;
+      font-weight: 400;
+      color: #fff;
+      margin-top: 70px;
+  }
+
+
+@media only screen and (max-width: 768px) {
+      .container {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 330px 1fr 350px 1fr 300px 400px 200px 250px ;
+          /* width: 100%; */
+          grid-template-areas:
+              'learn-more learn-more'
+              'iphone iphone'
+              'keyboard game'
+              'imac-retina imac-retina'
+              'twitter popular'
+              'laptop popular'
+              'popular2 popular2'
+              'tv tv'
+      }
+      .keyboard{
+        justify-content: center;
+        align-items: center;
+      }
+      .laptop img {
+        width: 85%;
+    }
+
+  }
+
+  @media only screen and (max-width: 425px) {
+      .container {
+          width: 100%;
+          grid-template-columns: auto;
+          grid-template-rows: 1fr 1fr 300px 300px 1fr 300px 500px 1fr 1fr 1fr ;
+          grid-template-areas:
+              'learn-more'
+              'iphone'
+              'keyboard'
+              'game'
+              'imac-retina'
+              'twitter'
+              'laptop'
+              'popular'
+              'popular'
+              'popular2'
+              'tv'
+
+
+
+      }
+
+      .iphone {
+          flex-direction: column;
+      }
+
+      .keyboard {
+          justify-content: center;
+          align-items: center;
+      }
+      .imac-retina{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+      }
+      .left-side .content h2
+      {
+        margin: 0;
+        padding: 0;
+        width: 100%;  
+      }
+      .left-side  img{
+        height: 380px;
+        width: 380px;
+      }
+      
+
+      .right-side {
+          width: 100%;
+          gap: 30px;
+          text-align: center;
+      }
+
+      .Much{
+        height: 91%;
+     
+      }
+
+
+      /* .imac-retina {
+          flex-direction: column;
+      }*/
+
+      .laptop img {
+          width: 80%;
+      } 
+
+  }
+
